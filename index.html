@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bin2Dec</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>
+    <title>Bin2Dec App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
     <div class="flex">
         <div>
             <h1>Bin2Dec App</h1>
-            <p style="margin:-2.5% 0;">Enter a binary number, get a decimal conversion.</p>
-            <p style="color: #209853;">Here is your decimal!</p>
+            <p id="texto">Enter a <a class="green">binari number</a>, get a <a class="green">decimal</a> conversion</p>
+            <p id="iker1"></p>
+            <p id="iker2"></p>
+            <p id="infobien" style="color: #07f06c;"></p>
+            <p id="infoerror" style="color: #e91700;"></p>
             <br>
-            <input class="inputbinario" type="number" name="" id="total" placeholder="">
-            <p id="numerocalculado"></p>
+            <input type="number" placeholder="Introduce Numero Binario..." id="numerobi" value="" onkeyup="texto()">
+            <p id="procesando"></p>
         </div>
     </div>
 

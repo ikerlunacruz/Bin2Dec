@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Neucha&family=Roboto+Mono:ital@1&display=swap');
 html {
     font-size: 16px;
-    background-color: black;
-    color: white;
 }
 
 
 /* Redimensión de fuente utilizando rem */
 
 p {
-    font-size: 1rem;
+    font-size: 17px;
+    color: white;
+    text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 30px;
+    text-align: center;
+    color: white;
 }
 
 h2 {
@@ -43,10 +46,14 @@ h6 {
 
 * {
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
 
@@ -63,7 +70,7 @@ body {
 
 .column-1 {
     width: 100%;
-    float: left;
+    height: 100%;
 }
 
 .column-2 {
@@ -99,16 +106,76 @@ body {
 
 /* Otras clases */
 
-* {
-    box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
-body {
-    margin: 0;
-    height: 100vh;
+.botones {
+    width: 48%;
 }
+
+#resultado {
+    text-align: center;
+    color: red;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    height: 10vh;
+}
+
+#procesando {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.green {
+    color: rgb(255, 242, 0);
+    background-color: rgba(88, 165, 88, 0.267);
+}
+
+#iker1 {
+    color: red;
+    font-size: 15px;
+}
+
+#iker2 {
+    color: green;
+    font-size: 15px;
+}
+
+.color-submit {
+    background-color: orange;
+    border-radius: 7px;
+}
+
+.styles-div {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3%;
+}
+
+input {
+    width: 100%;
+    background-color: black;
+    border-color: white;
+    color: white;
+    height: 7vh;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
 .flex {
     display: flex;
@@ -116,25 +183,6 @@ body {
     justify-content: center;
     height: 90vh;
 }
-
-.inputbinario {
-    background-color: black;
-    border-color: white;
-    height: 8vh;
-    width: 45vh;
-    color: white;
-    font-size: 30px;
-    text-align: left;
-}
-
-footer {
-    color: #333333;
-    text-align: center;
-    height: 10vh;
-}
-
-
-/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
 @media only screen and (max-width: 600px) {
     /* column-2 pasará de tener 50% a 100% */
