@@ -8,7 +8,7 @@ function texto() {
     if (numerobi == '') {
         procesando.innerHTML = ''
     }
-    if (ultimodigito = 0 || ultimodigito == 1) {
+    if (ultimodigito == 0 || ultimodigito == 1) {
         iker2.innerHTML = 'Here is your decimal'
         iker1.innerHTML = ''
     } else {
